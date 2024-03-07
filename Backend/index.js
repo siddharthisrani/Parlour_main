@@ -10,7 +10,21 @@ const port = 3001;
 
 mongoose.connect('mongodb://localhost:27017/parlourdata', { useNewUrlParser: true, useUnifiedTopology: true });
 
-// app.use(cors());
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://parlour-main-front.vercel.app');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
+
+  if (req.method === 'OPTIONS') {
+    // Preflight request, respond successfully
+    res.status(200).end();
+  } else {
+    // Continue to the next middleware
+    next();
+  }
+});
+
 app.use(bodyParser.json());
 
 app.get("/",(req,res)=>{
