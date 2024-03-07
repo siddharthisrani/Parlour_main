@@ -19,6 +19,9 @@ app.use(cors(
 ));
 app.use(bodyParser.json());
 
+app.get("/",(req,res)=>{
+  res.json("Hello");
+})
 // Simple in-memory storage for OTPs (replace this with a database in a real-world scenario)
 const otpStorage = {};
 
