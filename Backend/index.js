@@ -10,7 +10,7 @@ const port = 3001;
 
 mongoose.connect('mongodb://localhost:27017/parlourdata', { useNewUrlParser: true, useUnifiedTopology: true });
 
-app.use(cors());
+// app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/",(req,res)=>{
@@ -33,8 +33,7 @@ const generateOTP = () => Math.floor(100000 + Math.random() * 900000);
 
 // Endpoint to send OTP to email
 app.post('/api/send-otp', async (req, res) => {
-    res.setHeader('Access-Control-Allow-Credentials', 'true');
-    res.setHeader('Access-Control-Allow-Origin', 'https://parlour-main-front.vercel.app');
+    
     const { name, email } = req.body;
   
     try {
@@ -81,8 +80,6 @@ app.post('/api/send-otp', async (req, res) => {
  
 // Endpoint to verify OTP
 app.post('/api/verify-otp', (req, res) => {
-   res.setHeader('Access-Control-Allow-Credentials', 'true');
-    res.setHeader('Access-Control-Allow-Origin', 'https://parlour-main-front.vercel.app');
 
   const { email, otp } = req.body;
 
