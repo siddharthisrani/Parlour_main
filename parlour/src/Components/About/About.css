@@ -1,0 +1,12 @@
+
+#about{
+    background-color: #050505;
+}
+#about h2,h3{
+    font-size: 35px;
+    color: #ffae01;
+}
+#about p{
+    color: #fff;
+    margin-bottom: 30px;
+}

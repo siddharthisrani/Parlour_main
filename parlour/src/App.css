@@ -1,0 +1,118 @@
+
+
+/* new css  */
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1a1a1a; /* Dark golden background color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Label Styles */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+}
+
+/* Input Styles */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ffd700; /* Dark golden border color */
+  border-radius: 4px;
+  background-color: #2e2e2e; /* Dark background color */
+  color: #ffd700; /* Dark golden text color */
+}
+
+/* Button Styles */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.send-otp {
+  background-color: #ffd700; /* Dark golden background color */
+  color: #2e2e2e; /* Dark text color */
+}
+
+.verify-otp {
+  background-color: #2e2e2e; /* Dark background color */
+  color: #ffd700; /* Dark golden text color */
+}
+
+/* Message Styles */
+.success-message,
+.error-message {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.success-message {
+  background-color: #006400; /* Dark green background color */
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.error-message {
+  background-color: #8b0000; /* Dark red background color */
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Popup Styles */
+/* Add your styles for the GiftPopup component here */
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .form-container {
+      max-width: 100%;
+  }
+}
+
+/* ================================================================================================================================
+                                                        responsive css
+================================================================================================================================ */
+
+@media only screen and (max-width: 1016px) {
+  .tr-text{
+    font-size: 60px;
+  }
+  .prg{
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 775px) {
+.tr-text{
+  font-size: 40px;
+}
+.prg{
+  font-size: 15px;
+}
+#photo h1{
+  font-size: 50px;
+}
+ 
+h1,h2,h3,h4,h5,p{
+  text-align: center;
+}
+.branch-contant {
+  width:100%;
+  margin-right: 0px;
+}
+}
+@media only screen and (max-width: 1016px) {
+#gallary .responsive{
+  width: 100vw;
+}
+}

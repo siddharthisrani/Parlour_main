@@ -1,0 +1,13 @@
+.card-header {
+    background-color: #CF0A0A;
+    color: white;
+}
+
+.card-pricing {
+    background-color: #ffaf01;
+    border: 3px solid #ffae01;
+}
+.card-pricing:hover{
+    background-color: white;
+    border: 3px solid #fff;
+}

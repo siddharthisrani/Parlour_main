@@ -1,0 +1,15 @@
+#gallary {
+    background-color: #000000;
+}
+.abhishek  {
+    transition: 1s ease;
+    
+    }
+    
+    .abhishek:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.2);
+    transform: scale(0.9);
+    transition: 1s ease;
+    }
+    

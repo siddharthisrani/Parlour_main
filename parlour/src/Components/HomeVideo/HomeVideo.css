@@ -1,0 +1,26 @@
+.second-video{
+    display: none;
+   height: 550px ;
+    width: 50vw ;
+    background-color: black;
+    overflow: hidden;
+    object-fit: contain;
+    margin-left: 25%;
+}
+.second-videos{
+object-fit: cover;
+}
+
+@media (max-width:500px){
+    .second-video{
+        display: block;
+        height: auto;
+         width: 100vw !important;
+         background-color: black;
+         overflow: hidden;
+         margin-left: 0%;
+     }
+     .second-videos{
+     object-fit: cover;
+     }
+}

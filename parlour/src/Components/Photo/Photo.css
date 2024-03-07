@@ -1,0 +1,33 @@
+
+#photo {
+    
+    text-align: center;
+    /* background-image:
+    url("/img/overlay/overlay-2.webp");
+     */
+    min-height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.overlay-photo {
+    min-height: 100vh;
+    background: #0000007e;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#photo h1 {
+    font-size: 70px;
+    color: #c80a0a;
+}
+
+#photo h3 {
+    font-size: 30px;
+    color: #ffaf01;
+    padding-bottom: 30px;
+}
+

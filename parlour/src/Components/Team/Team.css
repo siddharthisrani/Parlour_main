@@ -1,0 +1,137 @@
+.title {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden
+    
+}
+
+.content .content-overlay {
+    background: #ffaf01bb;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s
+}
+
+.content:hover .content-overlay {
+    opacity: 1;
+    
+    margin: 0 auto;
+}
+
+.content-image {
+    width: 100%
+}
+
+
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1
+}
+
+.content-details h3 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase
+}
+
+.content-details p {
+    color: #fff;
+    font-size: 0.8em
+}
+
+.fadeIn-bottom {
+    top: 80%
+}
+
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.snip1127 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 400px;
+  max-height: 300px;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+figure.snip1127 * {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+figure.snip1127 img {
+  max-width: 100%;
+}
+figure.snip1127 i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 48px;
+  color: #ffffff;
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  opacity: 0;
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
+figure.snip1127 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+figure.snip1127:hover img,
+figure.snip1127.hover img {
+  opacity: 0.4;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+figure.snip1127:hover i,
+figure.snip1127.hover i {
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+  opacity: 1;
+}
