@@ -26,10 +26,12 @@ const App = () => {
   const [error, setError] = useState('');
   const [showPopup, setShowPopup] = useState(false);
 
+  const apiUrl ='https://parlour-main-api.vercel.app';
+
   axios.defaults.withCredentials=true;
   const sendOtp = async () => {
     try {
-      const response = await axios.post('https://parlour-main-api.vercel.app/send-otp', { name, email });
+      const response = await axios.post(`${apiUrl}/send-otp`, { name, email });
       setMessage(response.data.message);
     } catch (error) {
       setError(error.response?.data?.error || 'An error occurred while sending OTP.');
@@ -38,7 +40,7 @@ const App = () => {
   
   const verifyOtp = async () => {
     try {
-      const response = await axios.post('https://parlour-main-api.vercel.app/verify-otp', { email, otp: otp.trim() });
+      const response = await axios.post(`${apiUrl}/verify-otp`, { email, otp: otp.trim() });
       setMessage(response.data.message);
       setShowPopup(true);
     } catch (error) {
