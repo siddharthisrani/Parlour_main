@@ -10,7 +10,13 @@ const port = 3001;
 
 mongoose.connect('mongodb://localhost:27017/parlourdata', { useNewUrlParser: true, useUnifiedTopology: true });
 
-app.use(cors());
+app.use(cors(
+  {
+    origin:["https://parlour-main-front.vercel.app"],
+    methods:["POST","GET"],
+    credentials:true
+  }
+));
 app.use(bodyParser.json());
 
 // Simple in-memory storage for OTPs (replace this with a database in a real-world scenario)
