@@ -53,7 +53,7 @@ const Services = () => {
               <div className="parlor-info">
                 <h2>Parlour Information</h2>
                 <p>Name: Jyoti Israni</p>
-                <p>Email: jyotiisrani@gmail.com</p>
+                <p>Email: jyotiisrani1@gmail.com</p>
                 <p>Phone: +917987096549</p>
               </div>
             </div>
