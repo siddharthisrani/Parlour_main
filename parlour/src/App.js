@@ -26,7 +26,7 @@ const App = () => {
   const [error, setError] = useState('');
   const [showPopup, setShowPopup] = useState(false);
 
-  const apiUrl ='https://parlour-main-api.vercel.app';
+  const apiUrl ='https://parlour-main-appi.vercel.app';
 
   axios.defaults.withCredentials=true;
   const sendOtp = async () => {
