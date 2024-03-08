@@ -30,8 +30,13 @@ const App = () => {
 
   axios.defaults.withCredentials=true;
   const sendOtp = async () => {
+    console.log('API URL:', apiUrl);
     try {
-      const response = await axios.post(`${apiUrl}/api/send-otp`, { name, email });
+      const response = await axios.post(`${apiUrl}/api/send-otp`, { name, email }, {
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});      
       setMessage(response.data.message);
     } catch (error) {
       setError(error.response?.data?.error || 'An error occurred while sending OTP.');
