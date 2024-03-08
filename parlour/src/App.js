@@ -45,7 +45,7 @@ const App = () => {
   
   const verifyOtp = async () => {
     try {
-      const response = await axios.post(`${apiUrl}/verify-otp`, { email, otp: otp.trim() });
+      const response = await axios.post(`${apiUrl}/api/verify-otp`, { email, otp: otp.trim() });
       setMessage(response.data.message);
       setShowPopup(true);
     } catch (error) {
