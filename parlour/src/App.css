@@ -74,11 +74,11 @@ button {
 /* Add your styles for the GiftPopup component here */
 
 /* Responsive Styles */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .form-container {
       max-width: 100%;
   }
-}
+} */
 
 /* ================================================================================================================================
                                                         responsive css
